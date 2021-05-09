@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F3 Consultancy</title>
+</head>
+<body><center><h1>PDF To Excel Invoice converter</h1>
+<form method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" name="file">
+<br><br>
+<input type="submit">
+</form>
+<br><br>
+Your file is uploaded<br><br><a href='download'><button> Download Csv File</button> </a>
+</body>
+</html>
